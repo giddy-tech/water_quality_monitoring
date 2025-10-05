@@ -17,9 +17,6 @@ class WaterQualityEvaluator:
         return ph_safe and turbidity_safe
 
     def get_reason(self, row: pd.Series) -> str:
-        """
-        Returns the reason why a row is unsafe.
-        """
         if pd.isnull(row['ph']):
             return "missing pH"
         if pd.isnull(row['turbidity']):
