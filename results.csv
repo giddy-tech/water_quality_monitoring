@@ -1,0 +1,6 @@
+sensor_id,location,ph,turbidity,temperature,is_safe,reason
+1,Lake A,7.2,0.9,25,True,
+2,Lake B,8.7,1.1,23,False,pH too high
+3,Lake C,,0.5,22,False,missing pH
+4,Lake D,7.1,,24,False,missing turbidity
+5,Lake E,6.4,0.8,20,False,pH too low
