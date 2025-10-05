@@ -6,9 +6,6 @@ class WaterQualityEvaluator:
         self.turbidity_threshold = turbidity_threshold
 
     def is_safe(self, row: pd.Series) -> bool:
-        """
-        Returns True if water is safe, False otherwise.
-        """
         if pd.isnull(row['ph']):
             return False
         if pd.isnull(row['turbidity']):
