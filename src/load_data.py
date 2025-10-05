@@ -1,9 +1,6 @@
 import pandas as pd
 
 def load_sensor_data(file_path: str):
-    """
-    Load sensor CSV data into a pandas DataFrame.
-    """
     try:
         df = pd.read_csv(file_path)
         return df
